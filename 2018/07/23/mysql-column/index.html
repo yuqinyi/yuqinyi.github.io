@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>字符串格式化 | Jerry&#39;s blog</title>
+    <title>MySQL删除增加字段，并添加默认值和注释： | Jerry&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jerry">
     
 
     
-    <meta name="description" content="123456String.prototype.format= function() &amp;#123;   var args = arguments;   return this.replace(/\&amp;#123;(\d+)\&amp;#125;/g,function(s,i) &amp;#123;     return args[i];   &amp;#125;);&amp;#125;">
+    <meta name="description" content="123ALTER TABLE edu_teacher_schedule DROP COLUMN PREPARE_TIME;ALTER TABLE edu_teacher_schedule ADD COLUMN PREPARE_TIME int(11) DEFAULT 300 COMMENT &apos;备课时间，每小节5小时&apos;;UPDATE edu_teacher_schedule SET PREPARE_">
 <meta property="og:type" content="article">
-<meta property="og:title" content="字符串格式化">
-<meta property="og:url" content="http://yoursite.com/2018/07/23/string-format/index.html">
+<meta property="og:title" content="MySQL删除增加字段，并添加默认值和注释：">
+<meta property="og:url" content="http://yoursite.com/2018/07/23/mysql-column/index.html">
 <meta property="og:site_name" content="Jerry&#39;s blog">
-<meta property="og:description" content="123456String.prototype.format= function() &amp;#123;   var args = arguments;   return this.replace(/\&amp;#123;(\d+)\&amp;#125;/g,function(s,i) &amp;#123;     return args[i];   &amp;#125;);&amp;#125;">
+<meta property="og:description" content="123ALTER TABLE edu_teacher_schedule DROP COLUMN PREPARE_TIME;ALTER TABLE edu_teacher_schedule ADD COLUMN PREPARE_TIME int(11) DEFAULT 300 COMMENT &apos;备课时间，每小节5小时&apos;;UPDATE edu_teacher_schedule SET PREPARE_">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-23T06:43:57.113Z">
+<meta property="og:updated_time" content="2018-07-23T06:45:30.337Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="字符串格式化">
-<meta name="twitter:description" content="123456String.prototype.format= function() &amp;#123;   var args = arguments;   return this.replace(/\&amp;#123;(\d+)\&amp;#125;/g,function(s,i) &amp;#123;     return args[i];   &amp;#125;);&amp;#125;">
+<meta name="twitter:title" content="MySQL删除增加字段，并添加默认值和注释：">
+<meta name="twitter:description" content="123ALTER TABLE edu_teacher_schedule DROP COLUMN PREPARE_TIME;ALTER TABLE edu_teacher_schedule ADD COLUMN PREPARE_TIME int(11) DEFAULT 300 COMMENT &apos;备课时间，每小节5小时&apos;;UPDATE edu_teacher_schedule SET PREPARE_">
 
     
     <link rel="alternative" href="/atom.xml" title="Jerry&#39;s blog" type="application/atom+xml">
@@ -79,14 +79,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/07/23/string-format/" title="字符串格式化" itemprop="url">字符串格式化</a>
+      <a href="/2018/07/23/mysql-column/" title="MySQL删除增加字段，并添加默认值和注释：" itemprop="url">MySQL删除增加字段，并添加默认值和注释：</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jerry" target="_blank" itemprop="author">Jerry</a>
 		
   <p class="article-time">
-    <time datetime="2018-07-23T06:19:20.115Z" itemprop="datePublished"> 发表于 2018-07-23</time>
+    <time datetime="2018-07-23T06:45:25.626Z" itemprop="datePublished"> 发表于 2018-07-23</time>
     
   </p>
 </header>
@@ -99,7 +99,7 @@
 		
 		</div>
 		
-		<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>.prototype.format= <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> args = <span class="built_in">arguments</span>;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/\&#123;(\d+)\&#125;/g</span>,<span class="function"><span class="keyword">function</span>(<span class="params">s,i</span>) </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> args[i];</span><br><span class="line">   &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+		<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> edu_teacher_schedule <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> PREPARE_TIME;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> edu_teacher_schedule <span class="keyword">ADD</span> <span class="keyword">COLUMN</span> PREPARE_TIME <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="number">300</span> <span class="keyword">COMMENT</span> <span class="string">'备课时间，每小节5小时'</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> edu_teacher_schedule <span class="keyword">SET</span> PREPARE_TIME = <span class="number">300</span>;</span><br></pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -112,7 +112,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2018/07/23/string-format/" data-title="字符串格式化 | Jerry&#39;s blog" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2018/07/23/mysql-column/" data-title="MySQL删除增加字段，并添加默认值和注释： | Jerry&#39;s blog" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -126,18 +126,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2018/07/23/Date-format/" title="日期格式化">
+ <a href="/2018/07/23/json-string2array/" title="JSON字符串转对象数组：">
   <strong>上一篇：</strong><br/>
   <span>
-  日期格式化</span>
+  JSON字符串转对象数组：</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2018/01/18/TestHexo/"  title="TestHexo">
+<a href="/2018/07/23/beyond-compare4/"  title="beyond compare 4 注册码">
  <strong>下一篇：</strong><br/> 
- <span>TestHexo
+ <span>beyond compare 4 注册码
 </span>
 </a>
 </div>
