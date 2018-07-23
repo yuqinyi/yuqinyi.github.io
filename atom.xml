@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-23T06:21:48.050Z</updated>
+  <updated>2018-07-23T06:28:12.164Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2018/07/23/string-format/"/>
     <id>http://yoursite.com/2018/07/23/string-format/</id>
     <published>2018-07-23T06:19:20.115Z</published>
-    <updated>2018-07-23T06:21:48.050Z</updated>
+    <updated>2018-07-23T06:28:12.164Z</updated>
     
-    <content type="html"><![CDATA[<p>``` js<br>    String.prototype.format= function() {<br>       var args = arguments;<br>       return this.replace(/{(\d+)}/g,function(s,i) {<br>         return args[i];<br>       });<br>    }</p>]]></content>
+    <content type="html"><![CDATA[<p>``` javascript<br>    String.prototype.format= function() {<br>       var args = arguments;<br>       return this.replace(/{(\d+)}/g,function(s,i) {<br>         return args[i];<br>       });<br>    }</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;``` js&lt;br&gt;    String.prototype.format= function() {&lt;br&gt;       var args = arguments;&lt;br&gt;       return this.replace(/{(\d+)}/g,function(s,i
+        &lt;p&gt;``` javascript&lt;br&gt;    String.prototype.format= function() {&lt;br&gt;       var args = arguments;&lt;br&gt;       return this.replace(/{(\d+)}/g,func
       
     
     </summary>
