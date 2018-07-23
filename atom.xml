@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-23T06:28:12.164Z</updated>
+  <updated>2018-07-23T06:40:00.085Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2018/07/23/string-format/"/>
     <id>http://yoursite.com/2018/07/23/string-format/</id>
     <published>2018-07-23T06:19:20.115Z</published>
-    <updated>2018-07-23T06:28:12.164Z</updated>
+    <updated>2018-07-23T06:40:00.085Z</updated>
     
-    <content type="html"><![CDATA[<p>``` javascript<br>    String.prototype.format= function() {<br>       var args = arguments;<br>       return this.replace(/{(\d+)}/g,function(s,i) {<br>         return args[i];<br>       });<br>    }</p>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>.prototype.format= <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> args = <span class="built_in">arguments</span>;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/\&#123;(\d+)\&#125;/g</span>,<span class="function"><span class="keyword">function</span>(<span class="params">s,i</span>) </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> args[i];</span><br><span class="line">   &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;``` javascript&lt;br&gt;    String.prototype.format= function() {&lt;br&gt;       var args = arguments;&lt;br&gt;       return this.replace(/{(\d+)}/g,func
+        &lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l
       
     
     </summary>
